@@ -1,0 +1,150 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #daf2ee;
+
+}
+.container{
+    display: flex;
+    width: 70%;
+    margin: auto;
+}
+
+#navbar{
+    width: 23%;
+    padding: .4rem;
+    margin: .4rem;
+    font-size: 18px;
+
+background: rgba(30, 206, 246, 0.47);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.9px);
+-webkit-backdrop-filter: blur(5.9px);
+border: 1px solid rgba(30, 206, 246, 0.44);
+}
+#main-doc{
+    width: 75%;
+    padding: 2rem;
+
+    margin: .4rem;
+background: rgba(30, 206, 246, 0.47);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.9px);
+-webkit-backdrop-filter: blur(5.9px);
+border: 1px solid rgba(30, 206, 246, 0.44);
+
+}
+
+#main-doc div{
+    margin-left: 1rem;
+    font-size: 18px;
+
+
+}
+
+#main-doc section{
+    min-height: 250px;
+    
+}
+
+#main-doc section header{
+    width: 100%;
+    text-align: center;
+    
+}
+
+#main-doc section img{
+    width: 50%;
+    height: 50%;
+}
+
+#main-doc section h2{
+    font-size: 24px;
+}
+
+
+#navbar a{
+    display: block;
+    text-decoration: none;
+    font-weight: 400;
+    font-style: italic;
+    color: black;
+    border-bottom: 2px solid black;
+    margin: 10px 5px;
+}
+
+#navbar a:hover{
+    background-color: whitesmoke;
+    animation: ease .3s;
+
+}
+
+.noshow{
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .container{
+        width: 84%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        width: 93%;
+        position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #navbar{
+        width: 100%;
+        top: 0;
+        z-index: 10;
+        position: sticky;
+        
+    }
+
+    #navbar header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .show{
+        display: none;
+    }
+
+    .noshow{
+        display: block;
+    }
+
+    button{
+        outline: none;
+        border: none;
+        background: none;
+        max-width: 40px;
+        max-height: 40px;
+
+        border-radius: 20px;
+    }
+
+    button img{
+        width: 100%;
+    }
+
+    #main-doc{
+        width: 100%;
+
+    }
+  }
+  
